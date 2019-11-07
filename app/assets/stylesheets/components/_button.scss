@@ -1,0 +1,17 @@
+.btn-main {
+  background: #1E1F5F;
+
+  &:hover {
+    background: #191cc4;
+  }
+}
+
+.btn-yan {
+  background: #252A34;
+  color: white;
+
+  &:hover {
+    color: white;
+    background: #2f3849;
+  }
+}
