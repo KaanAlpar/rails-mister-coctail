@@ -1,6 +1,12 @@
 .create-form-control {
   position: relative;
-  background-color: transparent;
+}
+
+.search-form-control .btn {
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  right: 8px;
 }
 
 

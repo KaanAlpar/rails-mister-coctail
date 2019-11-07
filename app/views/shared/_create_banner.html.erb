@@ -1,9 +1,10 @@
 <div class="create_banner d-flex align-items-center">
   <div class="container">
+    <h1 class="mb-2">Name it!</h1>
     <%= simple_form_for @cocktail do |f| %>
       <div class="create-form-control form-group">
         <%= f.input :name, class: "c-form-control string required", label: false, placeholder: 'Type in cocktail name...' %>
-        <%= f.button :submit, class: 'btn btn-flat' %>
+        <%= f.button :submit, class: 'btn btn-light' %>
       </div>
     <% end %>
   </div>
