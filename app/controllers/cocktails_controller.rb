@@ -13,7 +13,8 @@ class CocktailsController < ApplicationController
 
   def create
     @cocktail = Cocktail.new(cocktail_params)
-    if @cocktail.save!
+    @cocktail.remote_photo_url = "https://source.unsplash.com/800x800/?cocktail"
+    if @cocktail.save
       redirect_to cocktail_path(@cocktail)
     else
       render :new
