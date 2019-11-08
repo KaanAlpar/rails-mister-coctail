@@ -5,9 +5,9 @@
     <%= link_to 'Add a dose', new_cocktail_dose_path(@cocktail), class: 'btn btn-yan' %>
   </div>
   <div id="ingredients">
-    <ul class="list-group">
+    <ul class="list-group" id="ingredients-list">
       <% @cocktail.doses.each do |dose| %>
-        <li class="list-group-item"><%= dose.description %> | <%= dose.ingredient.name %> -<%= link_to 'Delete', dose_path(dose), method: :delete, class: 'btn btn-flat' %></li>
+        <li class="list-group-item"><%= dose.description %> | <%= dose.ingredient.name %> - <%= link_to 'Delete', dose_path(dose), method: :delete, class: 'text-decoration-none' %></li>
       <% end %>
     </ul>
     <%= link_to "Back", "#{cocktails_path}#newest", class: 'd-block', class: 'btn btn-yan my-3' %>
