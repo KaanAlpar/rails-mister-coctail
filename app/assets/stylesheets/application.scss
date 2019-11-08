@@ -16,6 +16,10 @@
   background: asset-url('cocktails-create-banner.jpg') no-repeat center center/cover;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 // body {
 //   font-family: 'Lobster', cursive;
 // }
