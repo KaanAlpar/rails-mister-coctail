@@ -1,5 +1,5 @@
 <%= render 'shared/cocktail_banner' %>
-<div class="container my-5">
+<div class="container my-5 border">
   <div class="d-flex justify-content-between my-3">
     <h2>Ingredients</h2>
     <%= link_to 'Add a dose', new_cocktail_dose_path(@cocktail), class: 'btn btn-yan' %>
@@ -10,7 +10,7 @@
         <li class="list-group-item"><%= dose.description %> | <%= dose.ingredient.name %> -<%= link_to 'Delete', dose_path(dose), method: :delete, class: 'btn btn-flat' %></li>
       <% end %>
     </ul>
-    <%= link_to "Back", cocktails_path, class: 'd-block', class: 'btn btn-yan my-3' %>
+    <%= link_to "Back", "#{cocktails_path}#newest", class: 'd-block', class: 'btn btn-yan my-3' %>
   </div>
 </div>
 
