@@ -4,6 +4,8 @@
     <%= simple_form_for @cocktail do |f| %>
       <div class="create-form-control form-group">
         <%= f.input :name, class: "c-form-control string required", label: false, placeholder: 'Type in cocktail name...' %>
+        <%= f.input :photo, label: false %>
+        <%= f.input :photo_cache, as: :hidden %>
         <%= f.button :submit, class: 'btn btn-light' %>
       </div>
     <% end %>
