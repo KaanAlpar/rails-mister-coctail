@@ -7,7 +7,7 @@
     <% @cocktails.last(3).each do |cocktail| %>
       <div class="col-4 p-1">
           <%= link_to cocktail_path(cocktail), class: 'text-white text-decoration-none' do %>
-          <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path cocktail.photo, height: 180, width: 372, crop: :scale %>')">
+          <div class="card-category" data-aos="fade" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path cocktail.photo, height: 180, width: 372, crop: :scale %>')">
             <%= cocktail.name %>
           </div>
         <% end %>
@@ -22,7 +22,7 @@
     <% @cocktails.each do |cocktail| %>
       <div class="col-4 p-1">
         <%= link_to cocktail_path(cocktail), class: 'text-white text-decoration-none' do %>
-          <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path cocktail.photo, height: 180, width: 372, crop: :scale %>')">
+          <div class="card-category" data-aos="fade" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path cocktail.photo, height: 180, width: 372, crop: :scale %>')">
             <%= cocktail.name %>
           </div>
         <% end %>

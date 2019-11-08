@@ -1,4 +1,4 @@
-<div class="create_banner d-flex align-items-center" id="dose">
+<div class="create_banner d-flex align-items-center" id="dose" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= cl_image_path @cocktail.photo, height: 1080, width: 1920, crop: :scale %>')">
   <div class="container">
     <h1 class="mb-3">Add a dose for <%= @cocktail.name %></h1>
     <%= simple_form_for [@cocktail, @dose] do |f| %>

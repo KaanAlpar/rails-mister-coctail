@@ -14,11 +14,8 @@
   a {
     text-decoration: none;
   }
-
-  &:hover {
-    box-shadow: 0 0 15px rgba(6, 37, 113, 0.8);
-    color: rgb(12, 68, 209);
-    // border-radius: 8px;
-
-  }
 }
+
+.card-category:hover {
+    color: #383838;
+  }
